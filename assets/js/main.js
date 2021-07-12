@@ -30,10 +30,12 @@ async function get_short_url(url) {
 }
 
 function copy_clipboard() {
-  const cb = navigator.clipboard;
-  const paragraph = document.querySelector('#url_to_copy');
-  cb.writeText(paragraph.innerText).then(() => null );
-  let notification = alertify.notify('Copiado', 'success', 5, function () { console.log('dismissed'); });
+  navigator.clipboard.writeText(document.querySelector('#url_to_copy').innerText).then(() => {
+    alertify.notify('Copiado', 'success', 5, function () { console.log('dismissed'); });
+  })
+  .catch(err => {
+    alertify.notify(`${err}`, 'error', 5, function () { console.log('dismissed'); });
+  })
 }
 
 const template_url = (response) => {
