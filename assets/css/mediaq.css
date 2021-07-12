@@ -1,0 +1,37 @@
+@media screen and (max-width: 600px) {
+  main {
+    height: auto;
+  }
+  .form__url {
+    width: 100%;
+    padding: 5px;
+  }
+  .form__url form {
+    flex-direction: column;
+  }
+
+  .control__group {
+    flex-direction: column;
+    width: 100%;
+  }
+  .info .control__group {
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+  }
+  .results {
+    flex-direction: column;
+    margin:0;
+  }
+  .control {
+    width: 100%;
+  }
+  .btn {
+    width: 100%;
+  }
+
+  .footer__content{
+    flex-direction: column-reverse;
+  }
+
+}

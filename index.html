@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acortador URL</title>
+  <link rel="stylesheet" href="./assets/css/main.css">
+
+  <!-- JavaScript -->
+  <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
+</head>
+
+<body>
+  <section>
+    <div class="wrapper">
+      <h1>Acortador de urls</h1>
+      <p>Pega la url y acortala</p>
+    </div>
+  </section>
+  <section>
+    <div class="wrapper">
+      <section class="form__url">
+        <form>
+          <div class="control__group">
+            <label for="url_input" aria-label="">Ingresa la url</label>
+            <input type="text" class="control" id="url_input" name='url_input' autofocus>
+          </div>
+          <button type="button" class="btn primary" id="get_url">Obtener URL</button>
+        </form>
+        <div class="url_response" id="url_response">
+        </div>
+      </section>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="footer__content">
+      <div class="footer__media">
+        <a class="media__btn" href="https://twitter.com/emmanuelluur" title="Ir a twitter de Emmanuel">
+          <img src="./assets/img/twitter-brands.svg" alt="twitter icon" title="">
+        </a>
+        <a class="media__btn" href="https://github.com/emmanuelurbina" title="Ir a github de Emmanuel">
+          <img src="./assets/img/github-brands.svg" alt="github icon" title="">
+        </a>
+      </div>
+      <div class="footer__info">
+        <p>Desarrollado con ♥ por @Emmanuel</p>
+      </div>
+    </div>
+  </footer>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
